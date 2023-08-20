@@ -1,0 +1,149 @@
+#root {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+}
+.content{
+  position: relative;
+  display: grid;
+  grid-template-rows:50px 1fr 80px;
+}
+.content .navbar {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  & p{
+    margin-left: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  & img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+}
+.IconGoogle{
+  background-color: rgb(170, 6, 6);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.SearchItem{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h1{
+    padding: 0;
+    margin: 0;
+    font-size: 96px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  & input{
+    margin-top: 20px;
+    padding: 10px 30px;
+    width: 50vh;
+    border-radius: 20px;
+    border: none;
+    height: max-content;
+    background-color:transparent;
+    outline: 1px solid #9e9b9b;
+  }
+   
+}
+img{
+  cursor: pointer;
+}
+.ItemInput{
+  position: relative;
+  height: max-content;
+
+  .Input-Search{
+    margin-top: 30px;
+    margin-left:9px;
+    position: absolute;
+    width: 15px;
+    
+  }
+  .Input-Microphone{
+    position: absolute;
+    width: 35px;
+    margin-top: 20px;
+    margin-left:86%;
+  }
+  .Input-SearchImg{
+    position: absolute;
+    width: 20px;
+    margin-top: 27px;
+    margin-left:94%;
+  }
+}
+.ItemGroupButton{
+  top: 15px;
+  gap: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  & button{
+    font-size: 13px;
+    margin-left: 15px;
+    background-color: #3f3f3f;
+  }
+  & p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  & .Item-Th{
+    display: flex;
+    justify-content: center ;
+    & p{
+      margin-right: 5px;
+    }
+    & p:last-child{
+      color: rgb(65, 153, 241);
+    }
+  }
+}
+
+.about{
+  position: relative;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  background-color: #1d1d1d;
+  height: max-content;
+  .Item-About-th{
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 12px;
+  }
+  .Item-About-detail{
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid #3f3f3f;
+    
+    & p{
+      margin-left: 7px;
+      margin-right: 7px;
+      font-size: 12px;
+    }
+    .Item-detail-right{
+      display: flex;
+      
+    }
+    
+    .Item-detail-left{
+      display: flex;
+    }
+
+  }
+}
